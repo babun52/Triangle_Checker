@@ -8,7 +8,9 @@ class Triangle
     if @side1 == @side2 and @side2 == @side3
       'equilateral'
     elsif @side1 == @side2 or @side1 == @side3 or @side2 == @side3
-      'isosceles'     
+      'isosceles'
+    elsif @side1 != @side2 and @side2 != @side3 and @side1 != @side3
+      'scalene'    
     end
   end
 end
