@@ -1,0 +1,17 @@
+<h1>Input the lengths of the sides of a triangle.</h1>
+
+<form action="\triangles_output">
+  <label for="side1">Side1</label>
+  <input type="number" name="side1">
+  <label for="side2">Side2</label>
+  <input type="number" name="side2">
+  <label for="side3">Side3</label>
+  <input type="number" name="side3">
+  <button type="submit" name="button">Check!</button>
+</form>
+
+<div class="triangles_output">
+  <h2>Yout Triangle is:</h2>
+
+  <h3><%= @triangle.check_triangle() %></h3>
+</div>
